@@ -13,7 +13,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   CenterboardClass centerboardData = CenterboardClass();
-  // var duplicateItems = portsmouth;
 
   var items = <String>[];
   TextEditingController editingController = TextEditingController();
@@ -128,4 +127,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   } //Widget
 } //class
-//TextStyle(fontSize: 10.0, color: Colors.white)
