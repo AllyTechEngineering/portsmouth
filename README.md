@@ -8,6 +8,8 @@ A new Flutter project.
 A Flutter package to use fonts from fonts.google.com.
 - go_router: ^10.2.0
 A declarative routing package for Flutter that uses the Router API to provide a convenient, url-based API for navigating between different screens. You can define URL patterns, navigate using a URL, handle deep links, and a number of other navigation-related scenarios.
+- url_launcher: ^6.1.14
+A Flutter plugin for launching a URL.
 ### Flutter SDK
 - ThemeData Class
 - MaterialApp (for Material Design)
@@ -26,4 +28,11 @@ A declarative routing package for Flutter that uses the Router API to provide a 
         - ListTile class
           - styled using themeData
           - Used title and subtitle populated from List[]
+  - Decoration Class, BoxDecoration with background image
+  - InkWell task to display clickable menu (Child of a ListView.separated with builder)
+### Dart OOP
+- Custom class, objects and methods
+- Collections
+- Control flow
+- Error checking
     

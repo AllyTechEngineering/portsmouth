@@ -41,18 +41,18 @@ class _KeelboatScreenState extends State<KeelboatScreen> {
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(
-            Icons.description_outlined,
+            Icons.arrow_circle_left_outlined,
             color: Colors.white,
           ),
           iconSize: 40.0,
-          onPressed: () => context.go('/definition_screen'),
+          onPressed: () => context.go('/'),
         ),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
         title: FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
-            'Portsmouth Precalc Handicaps',
+            'Portsmouth Keelboat Class',
             style: TextStyle(
               // fontFamily: kFontTypeForApp,
               color: Colors.white,
