@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:portsmouth/models/centerboard_class.dart';
 
 class DefinitionScreen extends StatefulWidget {
   const DefinitionScreen({super.key});

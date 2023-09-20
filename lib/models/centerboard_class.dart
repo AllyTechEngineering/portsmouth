@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class CenterboardClass {
   String columnHeadings = 'Boat \t|\tD-PN';
   List<String> portsmouth = [

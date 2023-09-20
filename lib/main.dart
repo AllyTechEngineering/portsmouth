@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:portsmouth/models/centerboard_class.dart';
 import 'package:portsmouth/common/theme.dart';
 import 'package:portsmouth/views/centerboard_screen.dart';
 import 'package:portsmouth/views/definition_screen.dart';
@@ -12,7 +10,7 @@ import 'package:portsmouth/views/offshore_screen.dart';
 import 'package:portsmouth/views/settings_screen.dart';
 
 void main() {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyPortsmouthApp());
 }
 
