@@ -11,7 +11,7 @@ A declarative routing package for Flutter that uses the Router API to provide a 
 - url_launcher: ^6.1.14
 A Flutter plugin for launching a URL.
 ### Flutter SDK
-- ThemeData Class
+- ThemeData Class (moved ThemeData to separate file)
 - MaterialApp (for Material Design)
   - Material Library
     - AppBar & AppBarTheme
