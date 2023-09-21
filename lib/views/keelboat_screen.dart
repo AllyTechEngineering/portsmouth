@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portsmouth/models/centerboard_class.dart';
+import 'package:portsmouth/models/keelboat_class.dart';
 
 class KeelboatScreen extends StatefulWidget {
   const KeelboatScreen({super.key});
@@ -10,21 +11,21 @@ class KeelboatScreen extends StatefulWidget {
 }
 
 class _KeelboatScreenState extends State<KeelboatScreen> {
-  CenterboardClass centerboardData = CenterboardClass();
+  KeelboatClass keelboatData = KeelboatClass();
 
   var items = <String>[];
   TextEditingController editingController = TextEditingController();
 
   @override
   void initState() {
-    var duplicateItemsInit = centerboardData.portsmouth;
+    var duplicateItemsInit = keelboatData.portsmouth;
     items = duplicateItemsInit;
     super.initState();
   }
 
   void filterSearchResults(String query) {
     setState(() {
-      var duplicateItemsSearch = centerboardData.portsmouth;
+      var duplicateItemsSearch = keelboatData.portsmouth;
       items = duplicateItemsSearch
           .where((item) => item.toLowerCase().contains(query.toLowerCase()))
           .toList();
@@ -33,38 +34,26 @@ class _KeelboatScreenState extends State<KeelboatScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String columnValues = centerboardData.columnHeadings;
+    String columnValues = keelboatData.columnHeadings;
     return Scaffold(
       // backgroundColor: Colors.blue,
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_circle_left_outlined,
-            color: Colors.white,
           ),
-          iconSize: 40.0,
           onPressed: () => context.go('/'),
         ),
-        centerTitle: true,
-        backgroundColor: Colors.blueAccent,
         title: FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
             'Portsmouth Keelboat Class',
-            style: TextStyle(
-              // fontFamily: kFontTypeForApp,
-              color: Colors.white,
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-              overflow: TextOverflow.ellipsis,
-            ),
           ),
         ),
         actions: <Widget>[
           IconButton(
             icon: const Icon(
               Icons.settings,
-              color: Colors.white,
             ),
             onPressed: () => context.go('/settings_screen'),
           ),

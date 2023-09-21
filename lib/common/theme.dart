@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/// Color scheme
+/// https://colorhunt.co/palette/053b50176b8764ccc5eeeeee
+/// darkest 0xFF053B50
+/// dark 0xFF176B87
+/// medium 0xFF64CCC5
+/// light 0xFFEEEEEE
 final appTheme = ThemeData(
   useMaterial3: true,
 
@@ -14,12 +20,31 @@ final appTheme = ThemeData(
 // text styling for headlines, titles, bodies of text, and more.
 
   appBarTheme: const AppBarTheme(
-    elevation: 4,
-    centerTitle: true,
-    backgroundColor: Colors.indigo,
-    foregroundColor: Colors.white,
-    // color: Colors.indigo,
-  ),
+      actionsIconTheme: IconThemeData(
+        size: 40.0,
+        weight: 400.0,
+        fill: 1.0,
+        color: Color(0xFFEEEEEE),
+        opacity: 1.0,
+      ),
+      iconTheme: IconThemeData(
+        size: 40.0,
+        weight: 900.0,
+        fill: 1.0,
+        color: Color(0xFFEEEEEE),
+        opacity: 1.0,
+      ),
+      elevation: 4,
+      centerTitle: true,
+      backgroundColor: Colors.cyan,
+      foregroundColor: Colors.white,
+      titleTextStyle: TextStyle(
+        fontSize: 24.0,
+        fontWeight: FontWeight.bold,
+        color: Color(0xFF053B50),
+      )
+      // color: Colors.indigo,
+      ),
 // Define the default brightness and colors.
 
 // Define the default `TextTheme`. Use this to specify the default

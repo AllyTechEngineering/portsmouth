@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portsmouth/models/centerboard_class.dart';
+import 'package:provider/provider.dart';
 
 class CenterBoardScreen extends StatefulWidget {
   const CenterBoardScreen({super.key});
@@ -35,36 +36,23 @@ class _CenterBoardScreenState extends State<CenterBoardScreen> {
   Widget build(BuildContext context) {
     String columnValues = centerboardData.columnHeadings;
     return Scaffold(
-      // backgroundColor: Colors.blue,
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_circle_left_outlined,
-            color: Colors.white,
           ),
-          iconSize: 40.0,
           onPressed: () => context.go('/'),
         ),
-        centerTitle: true,
-        backgroundColor: Colors.blueAccent,
-        title: FittedBox(
+        title: const FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
             'Portsmouth Centerboard Class',
-            style: TextStyle(
-              // fontFamily: kFontTypeForApp,
-              color: Colors.white,
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-              overflow: TextOverflow.ellipsis,
-            ),
           ),
         ),
         actions: <Widget>[
           IconButton(
             icon: const Icon(
               Icons.settings,
-              color: Colors.white,
             ),
             onPressed: () => context.go('/settings_screen'),
           ),
