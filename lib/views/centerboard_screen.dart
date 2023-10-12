@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portsmouth/models/centerboard_class.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 
 class CenterBoardScreen extends StatefulWidget {
   const CenterBoardScreen({super.key});
@@ -63,21 +63,14 @@ class _CenterBoardScreenState extends State<CenterBoardScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
-              style: const TextStyle(
-                color: Colors.black,
-              ),
+              style: const TextStyle(),
               onChanged: (value) {
                 filterSearchResults(value);
               },
               controller: editingController,
               decoration: const InputDecoration(
-                filled: true, fillColor: Colors.white70,
-                // labelStyle: TextStyle(color: Colors.black),
-                // helperStyle: TextStyle(color: Colors.black),
-                // fillColor: Colors.blue,
-                // labelText: "Search",
-                hintText: "Search", hintStyle: TextStyle(color: Colors.black),
-                prefixIcon: Icon(Icons.search), prefixIconColor: Colors.black,
+                hintText: "Search",
+                prefixIcon: Icon(Icons.search),
                 border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(25.0))),
               ),
             ),
@@ -91,7 +84,7 @@ class _CenterBoardScreenState extends State<CenterBoardScreen> {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ListTile(
-                    style: Theme.of(context).listTileTheme.style,
+                    // style: Theme.of(context).listTileTheme.style,
                     title: Text(
                       columnValues,
                     ),

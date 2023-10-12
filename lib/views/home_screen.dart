@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../classes/portsmouth_categories.dart';
 import '../common/constants.dart';
 
@@ -27,17 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         centerTitle: true,
         // backgroundColor: Colors.blueAccent,
-        title: FittedBox(
+        title: const FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
             'NA Portsmouth Precalc Handicap',
-            // style: TextStyle(
-            //   // fontFamily: kFontTypeForApp,
-            //   color: Colors.white,
-            //   fontSize: 16.0,
-            //   fontWeight: FontWeight.bold,
-            //   overflow: TextOverflow.ellipsis,
-            // ),
           ),
         ),
         actions: <Widget>[
@@ -140,11 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.fromLTRB(20.0, 15.0, 8.0, 1.0),
         child: Text(
           categoriesClass.categoriesTitles[index],
-          style: const TextStyle(
-              color: Colors.white,
-              fontFamily: kFontTypeForApp,
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.bodyLarge,
           textAlign: TextAlign.left,
         ),
       ),

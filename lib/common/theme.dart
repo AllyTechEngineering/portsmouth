@@ -7,103 +7,135 @@ import 'package:google_fonts/google_fonts.dart';
 /// dark 0xFF176B87
 /// medium 0xFF64CCC5
 /// light 0xFFEEEEEE
+String fontValue = 'GoogleFonts.robotoSlab()';
 final appTheme = ThemeData(
   useMaterial3: true,
+  fontFamily: GoogleFonts.robotoSlab().fontFamily,
 
 // Define the default brightness and colors.
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Colors.indigo,
+    seedColor: const Color(0xFF176B87),
     brightness: Brightness.light,
   ),
 
-// Define the default `TextTheme`. Use this to specify the default
-// text styling for headlines, titles, bodies of text, and more.
-
+  scaffoldBackgroundColor: const Color(0xFF64CCC5),
+  inputDecorationTheme: const InputDecorationTheme(
+    filled: true,
+    fillColor: Color(0xFF053B50),
+    focusColor: Color(0xFFEEEEEE),
+    hoverColor: Color(0xFFEEEEEE),
+    prefixIconColor: Color(0xFFEEEEEE),
+    prefixStyle: TextStyle(
+      color: Color(0xFFEEEEEE),
+    ),
+    floatingLabelStyle: TextStyle(
+      color: Color(0xFFEEEEEE),
+    ),
+    labelStyle: TextStyle(
+      color: Color(0xFFEEEEEE),
+    ),
+    hintStyle: TextStyle(
+      color: Color(0xFFEEEEEE),
+    ),
+    helperStyle: TextStyle(
+      color: Color(0xFFEEEEEE),
+    ),
+  ),
   appBarTheme: const AppBarTheme(
-      actionsIconTheme: IconThemeData(
-        size: 40.0,
-        weight: 400.0,
-        fill: 1.0,
-        color: Color(0xFFEEEEEE),
-        opacity: 1.0,
-      ),
-      iconTheme: IconThemeData(
-        size: 40.0,
-        weight: 900.0,
-        fill: 1.0,
-        color: Color(0xFFEEEEEE),
-        opacity: 1.0,
-      ),
-      elevation: 4,
-      centerTitle: true,
-      backgroundColor: Colors.cyan,
-      foregroundColor: Colors.white,
-      titleTextStyle: TextStyle(
-        fontSize: 24.0,
-        fontWeight: FontWeight.bold,
-        color: Color(0xFF053B50),
-      )
-      // color: Colors.indigo,
-      ),
-// Define the default brightness and colors.
+    actionsIconTheme: IconThemeData(
+      size: 40.0,
+      weight: 400.0,
+      fill: 1.0,
+      color: Color(0xFF64CCC5),
+      opacity: 1.0,
+    ),
+    iconTheme: IconThemeData(
+      size: 40.0,
+      weight: 900.0,
+      fill: 1.0,
+      color: Color(0xFF64CCC5),
+      opacity: 1.0,
+    ),
+    elevation: 4,
+    centerTitle: true,
+    backgroundColor: Color(0xFF053B50),
+    foregroundColor: Colors.white,
+  ),
 
-// Define the default `TextTheme`. Use this to specify the default
-// text styling for headlines, titles, bodies of text, and more.
   textTheme: TextTheme(
-    bodyLarge: GoogleFonts.roboto(
+    bodyLarge: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
-      fontSize: 20,
-      color: Colors.white,
+      fontSize: 24,
+      color: Color(0xFFEEEEEE),
     ),
-    bodyMedium: GoogleFonts.roboto(
+    bodyMedium: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 16,
-      color: Colors.white,
+      color: Color(0xFFEEEEEE),
     ),
-    bodySmall: GoogleFonts.roboto(
+    bodySmall: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 10,
-      color: Colors.white,
+      color: Color(0xFFEEEEEE),
     ),
-    displayLarge: GoogleFonts.openSans(
+    displayLarge: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 20,
-      color: Colors.white,
+      color: const Color(0xFFEEEEEE),
     ),
-    displayMedium: GoogleFonts.openSans(
+    displayMedium: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 16,
-      color: Colors.white,
+      color: const Color(0xFFEEEEEE),
     ),
-    displaySmall: GoogleFonts.openSans(
+    displaySmall: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 12,
-      color: Colors.white,
+      color: const Color(0xFFEEEEEE),
+    ),
+    titleLarge: GoogleFonts.robotoSlab(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.normal,
+      fontSize: 24,
+      color: const Color(0xFFEEEEEE),
+    ),
+    titleMedium: GoogleFonts.robotoSlab(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.normal,
+      fontSize: 16,
+      color: const Color(0xFFEEEEEE),
+    ),
+    titleSmall: GoogleFonts.robotoSlab(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.normal,
+      fontSize: 10,
+      color: const Color(0xFFEEEEEE),
     ),
   ),
   listTileTheme: ListTileThemeData(
     textColor: Colors.white,
-    titleTextStyle: GoogleFonts.roboto(
+    titleTextStyle: GoogleFonts.robotoSlab(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
-      fontSize: 20,
-      color: Colors.white,
+      fontSize: 16,
+      color: const Color(0xFFEEEEEE),
     ),
-    subtitleTextStyle: GoogleFonts.roboto(
+    subtitleTextStyle: GoogleFonts.robotoSlab(
         fontStyle: FontStyle.normal,
         fontWeight: FontWeight.normal,
-        fontSize: 20,
-        color: Colors.white),
-    tileColor: Colors.indigo,
+        fontSize: 14,
+        color: const Color(0xFFEEEEEE)),
+    tileColor: const Color(0xFF053B50),
     shape: RoundedRectangleBorder(
       side: BorderSide(width: 2),
       borderRadius: BorderRadius.circular(24),
+      //border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(25.0))),
     ),
   ),
 );

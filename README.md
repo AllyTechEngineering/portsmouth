@@ -1,6 +1,6 @@
 # North American Portsmouth Calculated Handicap
 
-A new Flutter project.
+## Note: this app is in the process of being refactored to use Bloc and add a search feature.
 
 ## Key Flutter and Dart Features Used
 ### Packages

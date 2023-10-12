@@ -1,9 +1,9 @@
 class CategoriesClass {
   List<String> categoriesTitles = [
-    'Portsmouth Centerboard Class',
-    'Portsmouth Keelboat Class',
-    'Portsmouth Multihull Class',
-    'Portsmouth Offshore Class'
+    'Centerboard Class',
+    'Keelboat Class',
+    'Multihull Class',
+    'Offshore (Cruiser) Class'
   ];
   List<String> categoriesScreens = [
     'centerboard_screen',
